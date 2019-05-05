@@ -1,0 +1,9 @@
+{
+	"source": {
+		"include": ["js/app.js", "js/MainCtrl.js", "js/GuitarHelperService.js"]
+	},
+	"opts": {
+		"destination": "./documentation/",
+		"template": "node_modules/docdash"
+	}
+}
