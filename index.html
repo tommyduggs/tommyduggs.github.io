@@ -1,11 +1,16 @@
 <html>
 <head>
 	<script>
+		function infLoop() {
+			console.log("about to break");
+			while (true) {}
+		}
 		document.addEventListener("DOMContentLoaded", () => {
 			console.log("Page loaded");
 		});
 		document.addEventListener("click", function (event) {
-			while (true) {}
+			if (!event.target.matches("#btn-123")) return;
+			infLoop();
 		});
 	</script>
 </head>
